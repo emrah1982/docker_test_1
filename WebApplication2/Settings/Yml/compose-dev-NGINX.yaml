@@ -1,0 +1,14 @@
+version: '3'
+services:
+#-----------------------Nginix baglantýsý icin ------------------------
+# Kaynak Adres:  Düznelenecek
+   myServiceNginx:
+      image: nginx:latest
+      container_name: nginx
+      ports:
+        - "8080"
+        #- "1443:443"
+      volumes:
+        -
+      networks:
+        -

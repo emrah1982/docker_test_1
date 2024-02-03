@@ -1,0 +1,51 @@
+services:
+  file_yml_path: C:/Users/DDK-01/source/repos/WebApplication2/WebApplication2/Settings/Yml/
+  app:
+    entrypoint:
+    - sleep
+    - infinity
+    image: docker/dev-environments-default:stable-1
+    init: true
+    volumes:
+    - type: bind
+      source: /var/run/docker.sock
+      target: /var/run/docker.sock
+
+
+ 
+  mysql-db:
+    extends:
+      file:  C:/Users/DDK-01/source/repos/WebApplication2/WebApplication2/Settings/Yml/compose-dev-Mysql.yaml
+      service: myServiceMysql
+
+  nginx_test:
+    extends:
+       file: compose-dev-NGINX.yaml
+       service: myServiceNginx
+  
+  rabbitMq:
+    extends:
+       file: compose-dev-RabbitMq.yaml
+       service: myServiceRabbitMq
+
+  elasticSearch:
+    extends:
+       file: compose-dev-ElasticSearch.yaml
+       service: myServiceElasticSearch, myServiceKibana  #Kullaným þekli dogru mu?
+  
+  network:
+    extends:
+       file: compose-dev-Network.yaml
+       service: networks
+
+  backend:
+    extends:
+       file: compose-dev-Backend.yaml
+       service: myServiceBackend
+
+
+       
+ 
+
+ 
+

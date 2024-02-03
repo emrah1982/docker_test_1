@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Settings\Conf\Server\mySql.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Settings\Conf\Rabbitmq\Rabbitmq.conf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Settings\Conf\Rabbitmq\Rabbitmq.conf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Settings\Conf\Server\mySql.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="MySql.Data" Version="8.3.0" />
+    <PackageReference Include="MySql.Data.EntityFramework" Version="8.3.0" />
+    <PackageReference Include="MySqlConnector" Version="2.3.5" />
+    <PackageReference Include="NSwag.AspNetCore" Version="14.0.2" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="..\.dockerignore" Link="Properties\.dockerignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinesEntities\BusinesEntities.csproj" />
+    <ProjectReference Include="..\BusinesServices\BusinesServices.csproj" />
+    <ProjectReference Include="..\DataModel\DataModel.csproj" />
+    <ProjectReference Include="..\Utility\Utility.csproj" />
+  </ItemGroup>
+
+</Project>

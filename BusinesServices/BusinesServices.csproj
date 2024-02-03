@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="NEST" Version="7.17.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinesEntities\BusinesEntities.csproj" />
+    <ProjectReference Include="..\DataModel\DataModel.csproj" />
+  </ItemGroup>
+
+</Project>

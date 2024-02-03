@@ -1,0 +1,22 @@
+version: '3'
+services:
+   myServiceBackend:
+    container_name: BackendWebAPI
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    ports:
+      - "5005"
+    depends_on:
+      - database
+    networks:
+      main:
+        aliases:
+          - BackendWebAPI
+
+
+       
+ 
+
+ 
+

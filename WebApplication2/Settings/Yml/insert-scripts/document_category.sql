@@ -1,0 +1,117 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               5.7.32-0ubuntu0.18.04.1 - (Ubuntu)
+-- Server OS:                    Linux
+-- HeidiSQL Version:             10.2.0.5599
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Dumping data for table vpcontract_dev.document_category: ~96 rows (approximately)
+/*!40000 ALTER TABLE `document_category` DISABLE KEYS */;
+INSERT INTO `document_category` (`Id`, `CompanyCode`, `CategoryCode`, `CategoryName`, `CategoryDesc`, `InsertDateTime`, `InsertUser`, `UpdateDateTime`, `UpdateUser`, `Deleted`) VALUES
+	(16, 'ATLIV', '10600021', 'İSG VE ÇEVRE', 'İSG VE ÇEVRE KATEGORİSİNDEKİ DOKÜMANLARI İFADE EDER.', '2018-08-09 12:21:21', 'autoliv.isg', '2021-11-17 11:34:43', 'anil.talas@autoliv.com', 0),
+	(17, 'ATLIV', '10600031', 'SAĞLIK', 'SAĞLIK İÇERİKLİ EVRAKLARI İFADE EDER.', '2018-08-09 12:22:04', 'autoliv.isg', '2018-08-09 12:22:04', 'autoliv.isg', 0),
+	(18, 'ATLIV', '10600041', 'PERSONEL', 'PERSONELİ İLGİLENDİREN EVRAKLARI İFADE EDER.', '2018-08-09 12:22:30', 'autoliv.isg', '2018-08-09 12:22:30', 'autoliv.isg', 0),
+	(19, 'MTLXP', '10600221', 'isg', 'isg evrakları', '2018-08-14 18:38:10', 'metal.isg', '2018-08-14 18:38:11', 'metal.isg', 0),
+	(20, 'VOTOR', '10605791', 'SGK Belgeleri', '', '2018-10-05 05:33:54', 'ozlem.donmez@vcimentos.com', '2018-10-05 05:34:02', 'ozlem.donmez@vcimentos.com', 1),
+	(21, 'VOTOR', '10605801', 'İK/İDARİ İŞLER', '', '2018-10-05 05:34:24', 'ozlem.donmez@vcimentos.com', '2020-05-14 12:47:11', 'votorantim.isg', 1),
+	(22, 'VOTOR', '10605811', 'İGU', '', '2018-10-05 05:34:35', 'ozlem.donmez@vcimentos.com', '2018-10-16 03:51:24', 'ozlem.donmez@vcimentos.com', 0),
+	(23, 'VOTOR', '10605821', 'PROJE SORUMLUSU', 'Altişverenin yürüttüğü hizmetin Votorantim Çimento\'da organizayonunda ki yöneticisi', '2018-10-05 05:34:45', 'ozlem.donmez@vcimentos.com', '2020-05-20 06:18:26', 'votorantim.isg', 0),
+	(24, 'ATLIV', '10606591', 'SATINALMA', 'Satınalma ile ilgili evraklar', '2018-10-31 11:14:53', 'autoliv.isg', '2018-11-05 19:40:11', 'autoliv.isg', 0),
+	(25, 'CBINT', '10625769CS', 'İSG VE ÇEVRE', 'İSG VE ÇEVRE KATEGORİSİNDEKİ DOKÜMANLARI İFADE EDER', '2019-03-27 09:46:16', 'cbi.isg', '2019-03-27 09:46:17', 'cbi.isg', 0),
+	(26, 'CBINT', '10625770DJ', 'PERSONEL', 'PERSONELİ İLGİLENDİREN EVRAKLARI İFADE EDER', '2019-03-27 09:46:52', 'cbi.isg', '2019-04-29 11:34:17', 'cbi.isg', 1),
+	(27, 'CBINT', '10625771SO', 'SATINALMA', 'Satınalma ile ilgili evraklar', '2019-03-27 09:47:17', 'cbi.isg', '2019-03-27 09:47:18', 'cbi.isg', 0),
+	(28, 'CBINT', '10625772GU', 'SAĞLIK', 'SAĞLIK İÇERİKLİ EVRAKLARI İFADE EDER', '2019-03-27 09:47:38', 'cbi.isg', '2019-03-27 09:47:38', 'cbi.isg', 0),
+	(29, 'YKKTR', '10626786YG', 'İSG VE ÇEVRE', 'İSG VE ÇEVRE', '2019-07-22 07:50:31', 'sgursoy@ykk.com.tr', '2019-07-22 07:50:32', 'sgursoy@ykk.com.tr', 0),
+	(30, 'YKKTR', '10626787NC', 'PERSONEL', 'PERSONEL', '2019-07-22 07:50:48', 'sgursoy@ykk.com.tr', '2019-07-22 07:50:49', 'sgursoy@ykk.com.tr', 0),
+	(31, 'YKKTR', '10626788HN', 'SATINALMA', 'SATINALMA', '2019-07-22 07:51:12', 'sgursoy@ykk.com.tr', '2019-07-22 07:51:12', 'sgursoy@ykk.com.tr', 0),
+	(32, 'YKKTR', '10626789BV', 'SAĞLIK', 'SAĞLIK<br />', '2019-07-22 07:51:24', 'sgursoy@ykk.com.tr', '2019-07-22 07:51:25', 'sgursoy@ykk.com.tr', 0),
+	(33, 'YKKTR', '10626826ZG', 'GÜVENLİK', 'GÜVENLİK SERVİSİNİN ONAYLADIĞI EVRAKLARDDIR', '2019-07-22 09:16:15', 'sgursoy@ykk.com.tr', '2019-07-22 09:16:15', 'sgursoy@ykk.com.tr', 0),
+	(34, 'YUNSA', '10628101RT', 'İSG VE ÇEVRE', 'İSG VE ÇEVRE ile ilgili evraklar', '2019-11-05 10:49:10', 'yunsa.isg', '2019-11-05 10:49:11', 'yunsa.isg', 0),
+	(35, 'YUNSA', '10628102TK', 'PERSONEL', 'Personel özlük ile ilgili evraklar', '2019-11-05 10:49:32', 'yunsa.isg', '2020-02-17 12:30:24', 'ccalis@yunsa.com', 1),
+	(36, 'YUNSA', '10628103GL', 'SATINALMA', 'Satınalma servisini ilgilendiren evraklar', '2019-11-05 10:49:51', 'yunsa.isg', '2019-11-05 10:49:51', 'yunsa.isg', 0),
+	(37, 'YUNSA', '10628104LQ', 'SAĞLIK', 'Sağlık servisi ile ilgili evrakları', '2019-11-05 10:50:09', 'yunsa.isg', '2019-11-05 10:50:09', 'yunsa.isg', 0),
+	(38, 'YUNSA', '10628143MI', 'EĞİTİM', 'EĞİTİM', '2019-11-05 11:34:12', 'yunsa.isg', '2019-11-05 11:34:12', 'yunsa.isg', 0),
+	(39, 'HAYAT', '10628591IK', 'SEÇ', 'SEÇ evrakları<br /> ', '2019-11-28 19:15:33', 'hayat.kimya.isg', '2019-11-28 19:15:33', 'hayat.kimya.isg', 0),
+	(40, 'HAYAT', '10628592AQ', 'ÖZLÜK İŞLERİ', 'ÖZLÜK İŞLERİ evrakları<br />', '2019-11-28 19:16:06', 'hayat.kimya.isg', '2019-11-28 19:16:07', 'hayat.kimya.isg', 0),
+	(41, 'HAYAT', '10628593VT', 'GÜVENLİK', 'GÜVENLİK evrakları<br />', '2019-11-28 19:16:22', 'hayat.kimya.isg', '2019-11-28 19:16:22', 'hayat.kimya.isg', 0),
+	(42, 'HAYAT', '10628594GB', 'SATINALMA', 'SATINALMA evrakları<br />', '2019-11-28 19:16:36', 'hayat.kimya.isg', '2019-11-29 06:39:56', 'hayat.kimya.isg', 1),
+	(43, 'HAYAT', '10628595ZG', 'REVİR', 'REVİR evrakları', '2019-11-28 19:16:51', 'hayat.kimya.isg', '2019-11-28 19:16:51', 'hayat.kimya.isg', 0),
+	(44, 'LIMAS', '10629941TR', 'İSG VE ÇEVRE', 'İSG VE ÇEVRE', '2020-03-11 20:23:26', 'limas.isg', '2020-03-11 21:05:26', 'limas.isg', 0),
+	(45, 'LIMAS', '10629942VK', 'İK', 'İK', '2020-03-11 20:23:39', 'limas.isg', '2020-03-11 21:05:09', 'limas.isg', 0),
+	(46, 'LIMAS', '10629943YJ', 'SATINALMA', 'SATINALMA', '2020-03-11 20:23:56', 'limas.isg', '2020-03-24 08:07:16', 'gkaynak@limas.com.tr', 1),
+	(47, 'LIMAS', '10629944XZ', 'SAĞLIK', 'SAĞLIK', '2020-03-11 20:24:14', 'limas.isg', '2020-03-11 21:05:50', 'limas.isg', 0),
+	(48, 'LIMAS', '10629945AR', 'GÜVENLİK', 'GÜVENLİK', '2020-03-11 20:24:28', 'limas.isg', '2020-03-11 21:05:55', 'limas.isg', 1),
+	(49, 'LIMAS', '10630040NC', 'GÜVENLİK', 'GÜVENLİK', '2020-03-13 14:05:11', 'gkaynak@limas.com.tr', '2020-03-13 14:05:54', 'gkaynak@limas.com.tr', 0),
+	(50, 'NEMPO', '10631161HT', 'İSG', 'İSG Servisini ilgilendiren evraklar', '2020-07-01 14:39:27', 'nemport.isg', '2020-07-01 14:39:27', 'nemport.isg', 0),
+	(51, 'NEMPO', '10631162JU', 'GÜMRÜK', '', '2020-07-01 14:39:40', 'nemport.isg', '2020-07-01 14:39:40', 'nemport.isg', 0),
+	(52, 'NEMPO', '10631163TI', 'GÜVENLİK', '', '2020-07-01 14:39:52', 'nemport.isg', '2020-07-01 14:39:53', 'nemport.isg', 0),
+	(53, 'TUPRA', '10637084FA', 'İnsan Kaynakları', 'İnsan kaynakları biriminin onayladığı evraklardır.', '2021-01-15 07:11:51', 'tuprag.isg', '2021-01-18 08:26:43', 'tuprag.isg', 0),
+	(54, 'TUPRA', '10637085ZD', 'Personel', 'Personel işleri biriminin onayladığı evraklardır.', '2021-01-15 07:12:19', 'tuprag.isg', '2021-01-15 07:12:19', 'tuprag.isg', 0),
+	(55, 'TUPRA', '10637086QX', 'İşçi Sağlığı', 'İş yeri sağlık biriminin onayladığı evraklardır.', '2021-01-15 07:12:46', 'tuprag.isg', '2021-01-15 07:12:46', 'tuprag.isg', 0),
+	(56, 'TUPRA', '10637087BI', 'İş Güvenliği', 'İş güvenliği biriminin onayladığı evraklardır.', '2021-01-15 07:13:12', 'tuprag.isg', '2021-01-15 07:13:12', 'tuprag.isg', 0),
+	(57, 'TUPRA', '10637088FK', 'Mobil Ekipman', 'Mobil bakım biriminin onayladığı evraklardır.', '2021-01-15 07:13:37', 'tuprag.isg', '2021-01-15 07:13:38', 'tuprag.isg', 0),
+	(58, 'TUPRA', '10637089TM', 'Elektrikli El Aletleri', 'Tesis bakım elektrik biriminin onayladığı evraklardır.', '2021-01-15 07:14:06', 'tuprag.isg', '2021-01-15 07:14:07', 'tuprag.isg', 0),
+	(59, 'TUPRA', '10637090YQ', 'Sözleşme', 'Proje bölümü sözleşme biriminin onayladığı evraklardır.', '2021-01-15 07:14:35', 'tuprag.isg', '2021-02-18 06:34:48', 'sadiks@efemcukuru.com', 0),
+	(60, 'TUPRA', '10637135RF', 'Tesis Bakım', 'Tesis Bakım Biriminin onaylayacağı evraklardır.', '2021-01-15 10:40:39', 'tuprag.isg', '2021-01-15 10:40:40', 'tuprag.isg', 0),
+	(61, 'TUPRA', '10637481IP', 'İnsan Kaynakları ve Personel İşleri Birimi 2\'li Onay', 'İnsan Kaynakları ve Personel İşleri Birimi 2\'li onayladığı evraklardır.', '2021-01-26 11:02:56', 'tuprag.isg', '2021-11-16 06:59:57', 'sadiks@efemcukuru.com', 0),
+	(62, 'TUPRA', '10637482OC', 'İşyeri Sağlık Birimi ve İnsan Kaynakları Birimi 2\'li Onay', 'İşyeri Sağlık Birimi ve İnsan Kaynakları Biriminin 2\'li onayladığı evraklardır. ', '2021-01-26 11:04:12', 'tuprag.isg', '2021-11-16 06:58:40', 'sadiks@efemcukuru.com', 0),
+	(63, 'TUPRA', '10638613DR', 'Mobil Ekipman 2 li Onay', 'Mobil Bakım departmanın ikili onay verilmesidir. ', '2021-02-22 09:32:46', 'sadiks@efemcukuru.com', '2021-02-22 09:39:53', 'sadiks@efemcukuru.com', 0),
+	(64, 'KSEAS', '10642304KH', 'İSG VE ÇEVRE', 'İSG VE ÇEVRE servisinin onaylayacağı evraklar', '2021-05-02 15:57:36', 'keas.isg', '2021-05-02 15:57:37', 'keas.isg', 0),
+	(65, 'KSEAS', '10642305KI', 'SAĞLIK', 'SAĞLIK (Sağlık Raporu) vb sağlık servisinin onaylayacağı evraklar', '2021-05-02 15:58:10', 'keas.isg', '2021-05-02 15:58:10', 'keas.isg', 0),
+	(66, 'KSEAS', '10642306DR', 'GÜVENLİK - IK', 'GÜVENLİK - IK servisinin onaylayacağı evraklar', '2021-05-02 15:58:58', 'keas.isg', '2021-05-02 15:58:59', 'keas.isg', 0),
+	(67, 'RVAGO', '10646375OX', 'İSG VE ÇEVRE', 'İSG VE ÇEVRE servisi evrakları', '2021-07-07 06:12:48', 'ravago.isg', '2021-08-09 12:25:37', 'nazire.keskin@ravago.com', 0),
+	(68, 'RVAGO', '10646390JK', 'SAĞLIK', 'SAĞLIK ilgili evraklar', '2021-07-07 06:21:08', 'ravago.isg', '2021-07-07 06:21:08', 'ravago.isg', 0),
+	(69, 'RVAGO', '10646391IV', 'GÜVENLİK', 'Güvenlik', '2021-07-07 06:21:43', 'ravago.isg', '2021-07-07 06:21:44', 'ravago.isg', 0),
+	(70, 'PEPSIC', '10648964MT', 'SEÇ', '', '2021-08-31 10:45:25', 'pepsico.isg', '2021-08-31 15:33:52', 'pepsico.isg', 0),
+	(71, 'PEPSIC', '10648988KI', 'ALAN SORUMLUSU', '', '2021-08-31 15:34:06', 'pepsico.isg', '2021-08-31 15:36:09', 'pepsico.isg', 1),
+	(72, 'PEPSIC', '10648989CJ', 'GÜVENLİK', '', '2021-08-31 15:34:16', 'pepsico.isg', '2021-08-31 15:34:17', 'pepsico.isg', 0),
+	(73, 'PEPSIC', '10648990PL', 'ALAN SORUMLUSU', '', '2021-08-31 15:34:24', 'pepsico.isg', '2021-09-22 09:33:27', 'Pelin.Ozalp@pepsico.com', 0),
+	(74, 'KSEAS', '10649581JG', 'GÜVENLİK-SAĞLIK', '', '2021-09-10 09:11:11', 'keas.isg', '2021-09-10 09:11:21', 'keas.isg', 0),
+	(75, 'PEPSIC', '10650234XZ', 'SAĞLIK BİRİMİ', '', '2021-09-22 09:40:52', 'Pelin.Ozalp@pepsico.com', '2021-09-22 09:41:52', 'Pelin.Ozalp@pepsico.com', 0),
+	(76, 'VOTOR', '10651183EX', 'Tahribatsız Muayene Raporu', '', '2021-10-08 06:06:26', 'ozlem.donmez@vcimentos.com', '2021-10-08 06:07:05', 'ozlem.donmez@vcimentos.com', 1),
+	(77, 'VOTOR', '10652420WO', 'İK', 'İnsan Kaynakları için gerekli olan evraklardır.', '2021-10-28 08:54:05', 'votorantim.isg', '2021-10-28 08:54:06', 'votorantim.isg', 0),
+	(78, 'PLADIS', '10652567LN', 'İSG', 'İSG Servisini ilgilendiren evraklar', '2021-11-01 08:59:00', 'pladis.isg', '2022-02-23 04:32:47', 'yasar.yazici@pladisglobal.com', 0),
+	(79, 'PLADIS', '10652568VP', 'İK', 'İK Servisini ilgilendiren evraklar', '2021-11-01 08:59:10', 'pladis.isg', '2021-11-01 08:59:11', 'pladis.isg', 0),
+	(80, 'PLADIS', '10652569EE', 'KALİTE', 'KALİTE Servisini ilgilendiren evraklar', '2021-11-01 08:59:21', 'pladis.isg', '2021-11-01 08:59:21', 'pladis.isg', 0),
+	(81, 'PLADIS', '10652570SM', 'İDARİ İŞLER', 'İDARİ İŞLER Servisini ilgilendiren evraklar', '2021-11-01 08:59:33', 'pladis.isg', '2021-11-01 08:59:34', 'pladis.isg', 0),
+	(82, 'PLADIS', '10652571UT', 'SATINALMA / PROJE', 'SATINALMA / PROJE Servisini ilgilendiren evraklar', '2021-11-01 08:59:56', 'pladis.isg', '2021-11-01 08:59:56', 'pladis.isg', 0),
+	(83, 'PLADIS', '10652572QE', 'REVİR', 'REVİR Servisini ilgilendiren evraklar', '2021-11-01 09:00:07', 'pladis.isg', '2021-11-01 09:00:08', 'pladis.isg', 0),
+	(84, 'PLADIS', '10652573VC', 'ALAN SORUMLUSU', 'ALAN SORUMLUSU Servisini ilgilendiren evraklar', '2021-11-01 09:00:20', 'pladis.isg', '2021-11-01 09:00:21', 'pladis.isg', 0),
+	(85, 'NESTLE', '10653368LG', 'İSG VE ÇEVRE', '', '2021-11-11 08:50:58', 'nestle.isg', '2021-11-11 08:50:58', 'nestle.isg', 0),
+	(86, 'VPROD', '10653370RC', 'İSG VE ÇEVRE', '', '2021-11-11 09:15:48', 'vprod.isg', '2021-11-11 09:15:48', 'vprod.isg', 0),
+	(87, 'VPROD', '10653373FQ', 'İK', 'Sigorta Giriş Bildirgesi', '2021-11-11 09:32:31', 'vprod.isg', '2022-05-26 06:58:33', 'caner.sen@cfnkimya.com', 0),
+	(88, 'VPROD', '10653374IY', 'REVİR', '', '2021-11-11 09:35:35', 'vprod.isg', '2021-11-11 09:35:35', 'vprod.isg', 0),
+	(89, 'NESTLE', '10653521EJ', 'REZERVASYON SAHİBİ', '', '2021-11-12 06:13:17', 'nestle.isg', '2021-11-12 06:13:17', 'nestle.isg', 0),
+	(90, 'TUPRA', '10653690FH', 'İşyeri Sağlık Birimi ve Personel Birimi 2\'li Onayı', 'İşyeri Sağlık Birimi ve Personel Biriminin 2\'li onayladığı evraklardır.', '2021-11-16 06:56:50', 'sadiks@efemcukuru.com', '2021-11-16 06:56:51', 'sadiks@efemcukuru.com', 0),
+	(91, 'TUPRA', '10653747DW', 'İş Güvenliği ve İnsan Kaynakları Birimi 2\'li Onay', 'İş Güvenliği ve İnsan Kaynakları Biriminin 2\'li onayladırğı evraklardır.', '2021-11-17 07:18:52', 'sadiks@efemcukuru.com', '2021-11-17 07:18:52', 'sadiks@efemcukuru.com', 0),
+	(92, 'RVAGO', '10654694MR', 'NAKLİYE-TEDARİK-KARGO', 'Sürücü Belgeleri Onayı ', '2021-12-06 12:40:33', 'nazire.keskin@ravago.com', '2021-12-06 12:40:33', 'nazire.keskin@ravago.com', 0),
+	(93, 'NESTLE', '10658598JH', 'SAĞLIK', 'Sağlık grubu evrakları', '2022-01-26 07:42:10', 'nestle.isg', '2022-01-26 07:42:11', 'nestle.isg', 0),
+	(94, 'AKSOY', '10659175JQ', 'İSG VE ÇEVRE ', 'İSG VE ÇEVRE EVRAKLARI', '2022-02-03 10:33:00', 'aksoylar.isg', '2022-02-03 14:04:13', 'isg@aksoylarmuhendislik.com.tr', 0),
+	(95, 'AKSOY', '10659176QC', 'SAĞLIK', 'SAĞLIK GRUBU EVRAKLARI', '2022-02-03 10:33:15', 'aksoylar.isg', '2022-02-03 10:33:15', 'aksoylar.isg', 0),
+	(96, 'AKSOY', '10659177KY', 'İK', 'İNSAN KAYNAKLARI EVRAKLARI', '2022-02-03 10:33:39', 'aksoylar.isg', '2022-02-03 10:33:40', 'aksoylar.isg', 0),
+	(97, 'ASSAN', '10659941AE', 'SAĞLIK', 'SAĞLIK İLE İLGİLİ EVRAKLAR', '2022-02-16 06:17:19', 'assan.isg', '2022-02-18 08:25:41', 'cengiz.kayiskan@assanaluminyum.com', 1),
+	(98, 'ASSAN', '10659942IC', 'İSG&ÇEVRE', '', '2022-02-16 06:17:29', 'assan.isg', '2022-02-18 08:24:18', 'cengiz.kayiskan@assanaluminyum.com', 0),
+	(99, 'ASSAN', '10659968GB', 'ÖZLÜK İŞLERİ', '', '2022-02-16 09:45:42', 'assan.isg', '2022-02-18 08:27:01', 'cengiz.kayiskan@assanaluminyum.com', 1),
+	(100, 'ASSAN', '10659969GJ', 'GÜVENLİK', '', '2022-02-16 09:45:51', 'assan.isg', '2022-02-16 09:45:51', 'assan.isg', 0),
+	(101, 'ASSAN', '10659970UP', 'SAĞLIK MERKEZİ', '', '2022-02-16 09:46:02', 'assan.isg', '2022-02-18 08:24:36', 'cengiz.kayiskan@assanaluminyum.com', 0),
+	(102, 'ASSAN', '10659971YO', 'SATINALMA', '', '2022-02-16 09:46:10', 'assan.isg', '2022-02-16 09:46:10', 'assan.isg', 0),
+	(103, 'VPROD', '10660956FX', 'PMI-Human Resources', 'It is the group where the documents to be approved by the human resources department are categorized.', '2022-03-01 17:33:12', 'vprod.isg', '2022-03-01 18:21:05', 'vprod.isg', 0),
+	(104, 'VPROD', '10660957UP', 'PMI-EHS', 'It is the group where the documents to be approved by the SHE are categorized.', '2022-03-01 17:34:55', 'vprod.isg', '2022-03-02 11:07:51', 'vprod.isg', 0),
+	(105, 'VPROD', '10660958YQ', 'PMI-Health', 'It is the group where the documents to be approved by the Health Department are categorized.', '2022-03-01 17:41:06', 'vprod.isg', '2022-03-01 18:20:55', 'vprod.isg', 0),
+	(106, 'VPROD', '10660959PF', 'PMI-Security', 'It is the group where the documents to be approved by the human resources department are categorized.', '2022-03-01 17:42:11', 'vprod.isg', '2022-03-01 18:21:19', 'vprod.isg', 0),
+	(107, 'ETIKR', '10663842NY', 'İSG VE ÇEVRE', '', '2022-03-31 05:29:40', 'etikrom.isg', '2022-03-31 05:29:41', 'etikrom.isg', 0),
+	(108, 'ETIKR', '10663843BD', 'SAĞLIK (Sağlık Raporu)', '', '2022-03-31 05:29:57', 'etikrom.isg', '2022-03-31 05:29:58', 'etikrom.isg', 0),
+	(109, 'ETIKR', '10663844PI', 'GÜVENLİK', '', '2022-03-31 05:30:19', 'etikrom.isg', '2022-04-19 13:18:33', 'etikrom.isg', 1),
+	(110, 'ETIKR', '10663848LK', 'PERSONEL MÜDÜRLÜĞÜ', '', '2022-03-31 05:37:28', 'etikrom.isg', '2022-04-19 13:13:39', 'etikrom.isg', 0),
+	(111, 'VPROD', '10668714QT', 'İK', 'Hizmet Dökümü', '2022-05-26 06:58:51', 'caner.sen@cfnkimya.com', '2022-05-26 06:59:05', 'caner.sen@cfnkimya.com', 1);
+/*!40000 ALTER TABLE `document_category` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

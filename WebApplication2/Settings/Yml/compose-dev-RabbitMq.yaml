@@ -1,0 +1,28 @@
+# docker pull rabbitmq
+# Kaynak Adres: https://hub.docker.com/_/rabbitmq
+# Kaynak Adres: https://stackoverflow.com/questions/72661296/rabbitmq-how-to-use-custom-configuration-file-in-docker-compose
+# terminalde çalýþtýrmak için; docker-compose -f compose-dev-RabbitMq.yaml up
+
+version: '3.8'
+services:
+   myServiceRabbitMq:
+        image: rabbitmq:3-management
+        container_name: rabbitmq
+        hostname: 'rabbitmq'
+        environment:
+          RABBITMQ_DEFAULT_USER: "user"
+          RABBITMQ_DEFAULT_PASS: "password"
+        ports:
+            - "5672:5672"
+            - "15672:15672"
+        volumes:
+            - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/mnesia/
+            - ./rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+        restart: always
+
+        version: '3.8'
+
+
+
+
+
